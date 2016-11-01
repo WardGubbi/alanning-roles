@@ -19,7 +19,7 @@ declare module Roles {
   function getRolesForUser(userId: any): string[];
   function getAllRoles(): Mongo.Cursor<RolesDAO>;
   function getUsersInRole(role: any, group?: string, options?: any): Mongo.Cursor<RolesDAO>;
-  function getGroupsForUser: function (user: any, role?: string): Array<any>;
+  function getGroupsForUser(user: any, role?: string): Array<any>;
 
   var GLOBAL_GROUP: string;
 }
